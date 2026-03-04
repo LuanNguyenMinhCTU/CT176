@@ -21,7 +21,7 @@ public class DuongTron {
 		this.bankinh = c.bankinh;
 	}
 	public void makeCopy(DuongTron c) {
-		this.tam = new Diem(c.tam);
+		this.tam.makeCopy(c.tam);
 		this.bankinh = c.bankinh;
 	}
 	public void nhap()
@@ -68,3 +68,4 @@ public class DuongTron {
 		return bankinh;
 	}
 }
+
