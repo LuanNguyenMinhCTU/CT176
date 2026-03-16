@@ -47,6 +47,7 @@ class LopHocPhan {
         siSo = kb.nextInt();
         gv.nhap();
         System.out.print("nhap phong hoc : ");
+        // ???
         phongHoc = kb.nextLine();
         phongHoc = kb.nextLine();
         System.out.print("nhap thoi gian hoc : ");

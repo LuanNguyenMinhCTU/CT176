@@ -23,7 +23,7 @@ public class HocPhan {
 		this.soTietLT = soTietLT;
 		this.soTietTH = soTietTH;
 	}
-	public HocPhan(HocPhan A) {
+	public HocPhan(HocPhan A){
 		this.msHP = new String(A.msHP);
 		this.tenHP = new String(A.tenHP);
 		this.dvQuanLy = new String(A.dvQuanLy);
@@ -32,9 +32,9 @@ public class HocPhan {
 		this.soTietTH = A.soTietTH;
 	}
 	public void makeCopy(HocPhan A){
-		this.msHP = A.msHP;
-		this.tenHP = A.tenHP;
-		this.dvQuanLy = A.dvQuanLy;
+		this.msHP = new String(A.msHP);
+		this.tenHP = new String(A.tenHP);
+		this.dvQuanLy = new String(A.dvQuanLy);
 		this.soTinChi = A.soTinChi;
 		this.soTietLT = A.soTietLT;
 		this.soTietTH = A.soTietTH;

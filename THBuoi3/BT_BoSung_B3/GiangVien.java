@@ -32,6 +32,7 @@ class GiangVien {
         donVi = new String(a.donVi);
         thamNien = a.thamNien;
         soLuongHocPhan = a.soLuongHocPhan;
+        dsHP = new HocPhan[soLuongHocPhan];
         for (int i = 0; i < a.soLuongHocPhan; i++)
             dsHP[i] =new HocPhan(a.dsHP[i]);
     }
@@ -43,7 +44,7 @@ class GiangVien {
         thamNien = a.thamNien;
         soLuongHocPhan = a.soLuongHocPhan;
         for (int i = 0; i < a.soLuongHocPhan; i++)
-            dsHP[i] =new HocPhan(a.dsHP[i]);
+            dsHP[i].makeCopy(a.dsHP[i]);
     }
     public void nhap(){
         Scanner kb = new Scanner(System.in);
@@ -78,7 +79,7 @@ class GiangVien {
         System.out.println();
     }
     public boolean themHP(HocPhan h){
-        this.dsHP[this.soLuongHocPhan] =new HocPhan(h);
+        this.dsHP[this.soLuongHocPhan] = new HocPhan(h);
         this.soLuongHocPhan++;
         return true;
     }
