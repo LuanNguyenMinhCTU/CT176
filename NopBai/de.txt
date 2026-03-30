@@ -1,0 +1,52 @@
+Sinh viên thực hiện các công việc sau:
+ 
+1. Bổ sung hoàn chỉnh cho lớp MyDate (có sẵn trên bài giải Elearning): hàm xây dựng, xây dựng sao chép, sao chép sâu, toString(), equals(...), ... ; cho phép tuần tự hoá đối tượng.
+ 
+2. Cài đặt lớp ThueBaoInternet (Thuê bao Internet dành cho khách hàng cá nhân) cho phép tuần tự hóa đối tượng:
+
+Thuộc tính:
+
+Tên tài khoản:                 kiểu String
+Họ tên chủ thuê bao:      kiểu String
+Số CCCD:                        kiểu String
+Địa chỉ:                            kiểu String
+Ngày đăng ký:                 kiểu MyDate
+Tốc độ đăng ký:              kiểu int (đơn vị tính: Mbps)
+Phương thức:
+
+Hàm xây dựng mặc nhiên
+Hàm xây dựng sao chép
+Hàm sao chép sâu
+Nhập thông tin cho 1 thuê bao Internet.
+Hiển thị thông tin của 1 thuê bao Internet.
+Hàm tính cước phải trả trong 1 tháng:    int tinhCuoc();
+      Giả sử: gói 300Mbps là 190.000/tháng, 500Mbps là 240.000/tháng, 1000Mbps là 280.000/tháng,
+
+Kiểm tra tốc độ đăng ký có cao hơn tốc độ đăng ký của thuê bao tb hay không?    boolean tocDoCaoHon(ThueBaoInternet  tb);
+Lấy ra giá trị ngày đăng ký thuê bao:     MyDate layNgayDangKy();
+... // và các phương thức khác (nếu cần)
+3. Cài đặt lớp TenSVMSSV có chứa hàm main() thực hiện các công việc sau:
+
+      + Tạo 1 thuê bao a tổng quát. Nhập thông tin cho a. Hiển thị thông tin của thuê bao a.
+
+      + Nhập 1 danh sách (mảng) gồm n thuê bao (n: nhập từ bàn phím)
+
+      + Tìm thuê bao có tiền cước phải trả hàng tháng cao nhất trong danh sách.
+
+      + Tính tổng tiền cước phải thu cho danh sách thuê bao trên,.
+
+      + Hiển thị ra màn hình thông tin thuê bao được sắp xếp theo ngày đăng ký tăng dần.
+
+      + Nhập 1 số CCCD  x. Tìm thông tin các thuê bao của CCCD đó.
+
+      + Lưu danh sách trên vào file TBInternet.ser theo tuần tự hóa đối tượng.
+
+      + Tìm họ tên người đăng ký nhiều tài khoản thuê bao Internet nhất trong danh sách.
+
+Gợi ý:  
+  + Hàm và phương thức được xem là tương đương nhau.
+  + TenSVMSSV là tên (không dấu) và mã số sinh viên thực của mình. (VD:  HuyB1234567)
+ 
+Lưu ý:
++ Nộp file .java qua hệ thống Elearning CTU bình thường (như các buổi trước)
++ Chép bài làm (file .java) vào thư mục chỉ định (D:\NopBai) trên phòng máy tính => thử nghiệm thu bài thi TH.
