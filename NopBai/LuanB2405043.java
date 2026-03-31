@@ -21,7 +21,7 @@ public class LuanB2405043 {
             dSach[i].nhap();
         }
         System.out.println("");
-        
+
         int maxIndex = 0;
         for (int i = 1; i < n; i++)
             if(dSach[i].tocDoCaoHon(dSach[maxIndex])){
@@ -33,6 +33,33 @@ public class LuanB2405043 {
         for (int i = 0; i < n; i++) 
             cost += dSach[i].tinhCuoc();
         System.out.println("Tong tien cuoc phai thu la: " + cost);
+
+        // sap xep
+        for (int i = 0; i < n-1; i++){
+            for (int j = i+1; j< n; j++)
+                if (dSach[j].layNgayDangKy().giaTriNam() < dSach[i].layNgayDangKy().giaTriNam()){
+                    TBInternet temp =dSach[i];
+                    dSach[i] = dSach[j];
+                    dSach[j] = temp;
+                } else 
+                    if(dSach[j].layNgayDangKy().giaTriNam() == dSach[i].layNgayDangKy().giaTriNam()){
+                        if (dSach[j].layNgayDangKy().giaTriThang() < dSach[i].layNgayDangKy().giaTriThang()){
+                            TBInternet temp =dSach[i];
+                            dSach[i] = dSach[j];
+                            dSach[j] = temp;
+                        } else if(dSach[j].layNgayDangKy().giaTriThang() == dSach[i].layNgayDangKy().giaTriThang()){
+                            if (dSach[j].layNgayDangKy().giaTriNgay() < dSach[i].layNgayDangKy().giaTriNgay()){
+                                TBInternet temp =dSach[i];
+                                dSach[i] = dSach[j];
+                                dSach[j] = temp;
+                            }
+            }
+                    }}
+        for (int i = 0; i < n; i++){
+            dSach[i].hienThi();
+            System.out.println("");
+        }
+
 
         System.out.print("Nhap so can cuoc cong dan: ");
         String temp = kb.nextLine();
